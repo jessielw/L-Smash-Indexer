@@ -28,8 +28,7 @@ if __name__ == "__main__":
         "--batch-staxrip",
         action="store_true",
         help=(
-            "Will loop provided input directory and batch index the entire "
-            "directory in the format StaxRip utilizes"
+            "Will output index cache file in a temp directory in the format StaxRip utilizes"
         ),
     )
 

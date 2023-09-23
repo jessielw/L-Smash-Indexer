@@ -14,8 +14,7 @@ optional arguments:
   -i INPUT [INPUT ...], --input INPUT [INPUT ...]
                         Input file or directory
   -y, --overwrite       Overwrites index if already exists
-  -b, --batch-staxrip   Will loop provided input directory and batch index
-                        the entire directory in the format StaxRip utilizes
+  -b, --batch-staxrip   Will output index cache file in a temp directory in the format StaxRip utilizes
   -l LSMASH_DLL, --lsmash-dll LSMASH_DLL
                         Path to L-Smash library (dll)
 ```
