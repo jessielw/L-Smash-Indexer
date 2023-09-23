@@ -21,6 +21,10 @@ optional arguments:
                         Path to L-Smash library (dll)
 ```
 
+## Supports 
+
+Windows 8 and up
+
 ## Requirements
 
 You will need the L-Smash library. You can obtain it here.
