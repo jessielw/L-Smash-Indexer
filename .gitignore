@@ -1,3 +1,4 @@
 /.venv
 /.vscode
 /.pyinstaller_build
+__pycache__/
