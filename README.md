@@ -16,12 +16,11 @@ optional arguments:
   -y, --overwrite       Overwrites index if already exists
   -b, --batch-staxrip   Will loop provided input directory and batch index
                         the entire directory in the format StaxRip utilizes
-                        (overrides --batch)
   -l LSMASH_DLL, --lsmash-dll LSMASH_DLL
                         Path to L-Smash library (dll)
 ```
 
-## Supports 
+## Supports
 
 Windows 8 and up
 
