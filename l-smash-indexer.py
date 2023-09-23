@@ -29,7 +29,7 @@ if __name__ == "__main__":
         action="store_true",
         help=(
             "Will loop provided input directory and batch index the entire "
-            "directory in the format StaxRip utilizes (overrides --batch)"
+            "directory in the format StaxRip utilizes"
         ),
     )
 
