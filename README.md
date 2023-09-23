@@ -26,7 +26,7 @@ Windows 8 and up
 
 ## Requirements
 
-You will need the L-Smash library. You can obtain it here.
+You will need the (x64) L-Smash library. You can obtain it here.
 https://github.com/HomeOfAviSynthPlusEvolution/L-SMASH-Works
 
 ## Input Types
