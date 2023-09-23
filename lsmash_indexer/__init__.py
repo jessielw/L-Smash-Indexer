@@ -24,7 +24,7 @@ class LSmashIndexer:
 
         if cache_file.exists():
             if not overwrite:
-                exit_application(f"Index already exists for {cache_file.name}")
+                print(f"Index already exists for {cache_file.name}, skipping...")
             else:
                 cache_file.unlink(missing_ok=True)
         self.index_job(path_input, cache_file)
