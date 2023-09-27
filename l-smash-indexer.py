@@ -14,7 +14,7 @@ if __name__ == "__main__":
         "-v", "--version", action="version", version=f"{program_name} v{__version__}"
     )
 
-    parser.add_argument("-i", "--input", nargs="+", help="Input file or directory")
+    parser.add_argument("-i", "--input", nargs="+", help="Input file path(s) pattern using glob pattern matching")
 
     parser.add_argument(
         "-y",
