@@ -37,10 +37,10 @@ If there is space in the name you'll likely want to wrap them in quotes
 
 It also supports everything the python glob module supports. This allows you to filter or search recursively etc:
 
-Will find all mkv's in that currently directory:
+Will find all mkv's currently in the defined directory:
 "directory/nested_path/*.mkv"
 
-Will find all mkv's recursively:
+Will find all mkv's recursively in the defined directory:
 "directory/nested_path/**/*.mkv"
 
 ```
