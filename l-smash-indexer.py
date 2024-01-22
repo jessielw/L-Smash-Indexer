@@ -4,7 +4,7 @@ from lsmash_indexer import LSmashIndexer
 from lsmash_indexer.utils import exit_application, FileParser
 
 program_name = "L-Smash-Indexer"
-__version__ = "0.1.0"
+__version__ = "0.1.2"
 
 
 if __name__ == "__main__":
@@ -14,7 +14,12 @@ if __name__ == "__main__":
         "-v", "--version", action="version", version=f"{program_name} v{__version__}"
     )
 
-    parser.add_argument("-i", "--input", nargs="+", help="Input file path(s) pattern using glob pattern matching")
+    parser.add_argument(
+        "-i",
+        "--input",
+        nargs="+",
+        help="Input file path(s) pattern using glob pattern matching",
+    )
 
     parser.add_argument(
         "-y",
