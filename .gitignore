@@ -2,3 +2,4 @@
 /.vscode
 pyinstaller_build/
 __pycache__/
+custom-pyinstaller/
