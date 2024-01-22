@@ -15,6 +15,7 @@ class LSmashIndexer:
         overwrite: bool,
         batch_staxrip: bool,
     ):
+        skip = False
         if batch_staxrip:
             batch_temp_dir = Path(str(path_input.with_suffix("")) + "_temp")
             batch_temp_dir.mkdir(exist_ok=True)
@@ -24,13 +25,17 @@ class LSmashIndexer:
 
         if cache_file.exists():
             if not overwrite:
-                print(f"Index already exists for {cache_file.name}, skipping...")
+                print(f"Index already exists for {path_input.name}, skipping...")
+                skip = True
             else:
                 cache_file.unlink(missing_ok=True)
-        self.index_job(path_input, cache_file)
+
+        if not skip:
+            self.index_job(path_input, cache_file)
 
     def index_job(self, path_input: Path, cache_path: Path):
         try:
+            print(f"Creating index for {path_input.name}")
             self.core.lsmas.LWLibavSource(
                 source=str(path_input), cachefile=str(cache_path)
             )
