@@ -28,6 +28,9 @@ def build_app():
     tool_path = Path(Path.cwd() / "l-smash-indexer.py")
     icon_path = Path(Path.cwd() / "l-smash-image.ico")
     additional_hooks_path = Path(Path.cwd() / "hooks")
+    site_packages = Path(Path.cwd() / ".venv" / "Lib" / "site-packages")
+    vapoursynth_64 = site_packages / "vapoursynth64"
+    vapoursynth_64_portable = site_packages / "portable.vs"
 
     # change directory so we output all of pyinstallers files in it's own folder
     os.chdir(pyinstaller_folder)
@@ -40,6 +43,10 @@ def build_app():
             "--name",
             "L-Smash-Indexer",
             f"--icon={str(icon_path)}",
+            "--add-data",
+            f"{vapoursynth_64};vapoursynth64",
+            "--add-data",
+            f"{vapoursynth_64_portable};.",
             str(tool_path),
             f"--additional-hooks-dir={str(additional_hooks_path)}",
         ]
