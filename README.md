@@ -5,16 +5,18 @@ A CLI to index media files with L-SMASH's LWLibavSource
 ## Basic Usage
 
 ```
-usage: L-Smash-Indexer [-h] [-v] [-i INPUT [INPUT ...]] [-y] [-b]
-                       [-l LSMASH_DLL]
+usage: L-Smash-Indexer [-h] [-v] [-i INPUT [INPUT ...]] [-o OUTPUT] [-y] [-b] [-l LSMASH_DLL]
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
   -v, --version         show program's version number and exit
   -i INPUT [INPUT ...], --input INPUT [INPUT ...]
                         Input file path(s) pattern using glob pattern matching
+  -o OUTPUT, --output OUTPUT
+                        Output directory
   -y, --overwrite       Overwrites index if already exists
-  -b, --batch-staxrip   Will output index cache file in a temp directory in the format StaxRip utilizes
+  -b, --batch-staxrip   Will output index cache file in a temp directory in the format StaxRip utilizes, this overrides '--
+                        output'
   -l LSMASH_DLL, --lsmash-dll LSMASH_DLL
                         Path to L-Smash library (dll)
 ```
