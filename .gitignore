@@ -3,3 +3,4 @@
 pyinstaller_build/
 __pycache__/
 custom-pyinstaller/
+*.exe
